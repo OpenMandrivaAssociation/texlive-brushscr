@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/brushscr
+# catalog-date 2006-12-21 23:43:15 +0100
+# catalog-license pd
+# catalog-version undef
 Name:		texlive-brushscr
 Version:	20061221
 Release:	1
@@ -64,6 +70,7 @@ describes the package and sample.tex illustrates its use.
 #- source
 %doc %{_texmfdistdir}/source/latex/brushscr/Makefile
 %doc %{_texmfdistdir}/source/latex/brushscr/pbsi.mtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -74,3 +81,5 @@ describes the package and sample.tex illustrates its use.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
