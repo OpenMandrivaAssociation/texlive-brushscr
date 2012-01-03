@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-brushscr
 Version:	20061221
-Release:	1
+Release:	2
 Summary:	A handwriting script font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/brushscr
