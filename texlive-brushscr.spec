@@ -1,18 +1,12 @@
-# revision 28363
-# category Package
-# catalog-ctan /fonts/brushscr
-# catalog-date 2012-10-18 12:56:21 +0200
-# catalog-license pd
-# catalog-version undef
 Name:		texlive-brushscr
-Version:	20190228
+Version:	28363
 Release:	1
 Summary:	A handwriting script font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/brushscr
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/brushscr.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/brushscr.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/brushscr.r28363.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/brushscr.doc.r28363.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ order to use that font. The file AAA_readme.tex fully describes
 the package and sample.tex illustrates its use.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -55,7 +49,7 @@ the package and sample.tex illustrates its use.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
