@@ -1,6 +1,6 @@
 Name:		texlive-brushscr
 Version:	28363
-Release:	1
+Release:	2
 Summary:	A handwriting script font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/brushscr
