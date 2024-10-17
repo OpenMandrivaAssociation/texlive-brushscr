@@ -3,7 +3,7 @@ Version:	28363
 Release:	2
 Summary:	A handwriting script font
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/brushscr
+URL:		https://www.ctan.org/tex-archive/fonts/brushscr
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/brushscr.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/brushscr.doc.r%{version}.tar.xz
